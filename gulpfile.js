@@ -56,9 +56,7 @@ var gulp = require('gulp'),
   })
 
   // Minify all files and create a dist directory with minify & compressed files
-  gulp.task('prod', gulp.series(['imgmin', 'cssmin']), (cb) => {
-    cb();
-  })
+  gulp.task('prod', gulp.series(['imgmin', 'cssmin']), () => {})
 
   // Default task run `scss` task
   gulp.task('default', gulp.series('scss'), () => {})
